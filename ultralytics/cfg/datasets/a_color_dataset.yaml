@@ -1,0 +1,61 @@
+# Ultralytics YOLO 🚀, AGPL-3.0 license
+# DOTA8 dataset 8 images from split DOTAv1 dataset by Ultralytics
+# Documentation: https://docs.ultralytics.com/datasets/obb/dota8/
+# Example usage: yolo train model=yolov8n-obb.pt data=dota8.yaml
+# parent
+# ├── ultralytics
+# └── datasets
+#     └── dota8  ← downloads here (1MB)
+
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+# path: ../datasets/yolov10_years_dataset/ # dataset root dir
+# path: ../datasets/color_dataset_enhance_noise_2/ # dataset root dir 数据增强后的图片
+#path: ../datasets/color_dataset_2/ # dataset root dir 未增强的图片
+#path: ../datasets/color_dataset_enhance_3/ # dataset root dir 每张图片增强2次后的图片
+path: ../datasets/color_datasets_enhance_1/new/color_datasets_enhance_1/ # dataset root dir 每张图片增强1次后的图片
+train: train/images # train images (relative to 'path') 4 images
+val: test/images # val images (relative to 'path') 4 images
+
+# Classes for DOTA 1.0
+names:
+  0: Fish
+  1: Child
+  2: Women
+  3: Butterfly
+  4: Bats
+  5: RuYi
+  6: Lion
+  7: Tiger
+  8: YuanBao
+  9: Copper Coins
+  10: Lotus
+  11: Peony
+  12: Peach
+  13: Bergamot
+  14: Pomegranate
+  15: Horse
+  16: Deer
+  17: Steel Whip
+  18: Steel Mace
+  19: Axe
+  20: Flag
+  21: Bird
+  22: Phoenix
+  23: Embroidered Ball
+  24: Kylin
+  25: Men
+  26: Hat
+  27: Melon
+  28: Chrysanthemum
+  29: Crab
+  30: Crickets
+  31: Cabbage
+  32: Big Knife
+  33: Duck
+  34: Pig
+  35: Sheep
+  36: Elephant
+  37: Gourd
+  38: Hammer
+  39: Hu
+
