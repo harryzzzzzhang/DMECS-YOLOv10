@@ -1,8 +1,8 @@
 from ultralytics import YOLOv10
 import os
 
-model_yaml_path = "./ultralytics/cfg/models/v10/yolov10n_DMECS.yaml" #
-data_yaml_path = './ultralytics/cfg/datasets/a_color_dataset.yaml' # 完全年画
+model_yaml_path = "./ultralytics/cfg/models/v10/yolov10n_DMECS.yaml"
+data_yaml_path = './ultralytics/cfg/datasets/a_color_dataset.yaml'
 
 if __name__ == '__main__':
     model = YOLOv10(model_yaml_path)
